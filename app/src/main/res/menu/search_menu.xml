@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/baseline_search_24"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="always|collapseActionView"
+        android:title="search"/>
+    <item
+        android:id="@+id/action_filter"
+        android:icon="@drawable/baseline_filter_list_24"
+        android:title="filter"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/filter_popular"
+                android:title="Popular"/>
+            <item
+                android:id="@+id/filter_recent"
+                android:title="Recent"/>
+            <item
+                android:id="@+id/filter_bookmark"
+                android:title="Bookmark"/>
+        </menu>
+    </item>
+</menu>

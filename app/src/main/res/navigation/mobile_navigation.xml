@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.komic.komic.ui.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home">
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_manga_detail"
+        android:name="com.komic.komic.ui.MangaDetailFragment"
+        android:label="Manga Detail"
+        tools:layout="@layout/manga_detail">
+        <action
+            android:id="@+id/action_home_to_manga_detail"
+            app:destination="@id/navigation_home"
+            app:popUpTo="@id/navigation_home"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_manga_reader"
+        android:name="com.komic.komic.ui.MangaReaderFragment"
+        android:label="Manga Reader"
+        tools:layout="@layout/manga_reader">
+        <action
+            android:id="@+id/action_reader_to_manga_detail"
+            app:destination="@id/navigation_manga_detail"
+            app:popUpTo="@id/navigation_manga_detail"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+</navigation>

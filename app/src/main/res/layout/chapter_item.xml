@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/chapter_item_button"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:layout_marginEnd="12dp"
+    android:layout_marginBottom="12dp"
+    android:background="@drawable/chapter_button_bg"
+    android:gravity="center"
+    android:textColor="@color/text_emphasis"
+    android:textSize="12sp" />
