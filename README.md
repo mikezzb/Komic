@@ -1,18 +1,13 @@
 # Komic
 MangaDex reader with offline manga translation using ML Kit.
 
-<img src=".github/f1.png" style="zoom: 25%;" />
+<p float="left">
+  <img src=".github/f1.png" width="32%" />
+  <img src=".github/f6.png" width="32%" />
+  <img src=".github/f2.png" width="32%" />
+</p>
 
-### Features
 
 #### Manga Translation (ML Kit)
 
-<img src=".github/f8.png" style="zoom:25%;" />
-
-#### MangaDex Search
-
-<img src=".github/f6.png" style="zoom:25%;" />
-
-#### Manga Overview
-
-<img src=".github/f2.png" style="zoom:25%;" />
+<img src=".github/f8.png" width="70%" />
